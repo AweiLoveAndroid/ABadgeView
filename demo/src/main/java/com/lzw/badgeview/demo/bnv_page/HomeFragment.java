@@ -21,8 +21,6 @@ import com.lzw.badgeview.demo.databinding.FragmentHomeBinding;
 
 public class HomeFragment extends Fragment{
 
-    private FragmentHomeBinding binding;
-
     public static final String TAG = HomeFragment.class.getSimpleName();
 
     private final String[] newNotices = new String[]{"", "60", "1000"};
@@ -37,14 +35,13 @@ public class HomeFragment extends Fragment{
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
 
-        binding = FragmentHomeBinding.inflate(inflater, container, false);
-        View root = binding.getRoot();
+        View root = inflater.inflate(R.layout.fragment_home, container, false);
 
-        imageView0 = binding.image0;
-        imageView1 = binding.image1;
-        imageView2 = binding.image2;
-        imageView3 = binding.image3;
-        imageView4 = binding.image4;
+        imageView0 = root.findViewById(R.id.image0);
+        imageView1 = root.findViewById(R.id.image1);
+        imageView2 = root.findViewById(R.id.image2);
+        imageView3 = root.findViewById(R.id.image3);
+        imageView4 = root.findViewById(R.id.image4);
 
 
         imageView0.setIsNeedShowBadge(true);
@@ -119,12 +116,6 @@ public class HomeFragment extends Fragment{
         ;
 
         return root;
-    }
-
-    @Override
-    public void onDestroyView() {
-        super.onDestroyView();
-        binding = null;
     }
 
 }

@@ -8,24 +8,16 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
-import com.lzw.badgeview.demo.databinding.FragmentOneBinding;
-import com.lzw.badgeview.demo.databinding.FragmentThreeBinding;
+import com.lzw.badgeview.demo.R;
 
 public class FragmentThree extends Fragment {
-
-    private FragmentThreeBinding binding;
 
     public static final String TAG = FragmentThree.class.getSimpleName();
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        binding = FragmentThreeBinding.inflate(inflater, container, false);
-        return binding.getRoot();
+        View root = inflater.inflate(R.layout.fragment_three, container, false);
+        return root;
     }
 
-    @Override
-    public void onDestroyView() {
-        super.onDestroyView();
-        binding = null;
-    }
 }

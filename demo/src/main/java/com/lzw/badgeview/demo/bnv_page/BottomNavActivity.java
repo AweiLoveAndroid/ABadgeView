@@ -18,14 +18,12 @@ import com.lzw.badgeview.IABadge;
 import com.lzw.badgeview.OnBadgeDragStateChangedListener;
 import com.lzw.badgeview.annotation.ABadgeDragState;
 import com.lzw.badgeview.demo.R;
-import com.lzw.badgeview.demo.databinding.ActivityBottomNavBinding;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 
 public class BottomNavActivity extends AppCompatActivity {
 
-    private ActivityBottomNavBinding binding;
     private ABadgeBottomNavigationView bottomNavigationView;
 
     public static final String TAG = BottomNavActivity.class.getSimpleName();
@@ -34,10 +32,9 @@ public class BottomNavActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        binding = ActivityBottomNavBinding.inflate(getLayoutInflater());
-        setContentView(binding.getRoot());
+        setContentView(R.layout.activity_bottom_nav);
 
-        bottomNavigationView = binding.navView;
+        bottomNavigationView = findViewById(R.id.nav_view);
 
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.

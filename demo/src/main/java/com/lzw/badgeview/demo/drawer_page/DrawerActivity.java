@@ -18,24 +18,20 @@ import androidx.drawerlayout.widget.DrawerLayout;
 
 import com.google.android.material.navigation.NavigationView;
 import com.lzw.badgeview.demo.R;
-import com.lzw.badgeview.demo.databinding.ActivityDrawerBinding;
 import com.lzw.badgeview.menu.ABadgeMenuItemClickListener;
 import com.lzw.badgeview.menu.ABadgeMenuItemHelper;
 import com.lzw.badgeview.menu.ABadgeStyleDefault;
 
 public class DrawerActivity extends AppCompatActivity {
 
-    ActivityDrawerBinding binding;
-
     public static final String TAG = DrawerActivity.class.getSimpleName();
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        binding = ActivityDrawerBinding.inflate(getLayoutInflater());
-        setContentView(binding.getRoot());
+        setContentView(R.layout.activity_drawer);
 
-        DrawerLayout drawerLayout = binding.drawerLayout;
+        DrawerLayout drawerLayout = findViewById(R.id.drawer_layout);
 
         LinearLayout linearLayout = drawerLayout.findViewById(R.id.content_area);
         Toolbar toolbar = linearLayout.findViewById(R.id.toolbar);

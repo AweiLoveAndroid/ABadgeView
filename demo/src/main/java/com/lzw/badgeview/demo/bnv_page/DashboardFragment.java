@@ -16,11 +16,8 @@ import com.lzw.badgeview.IABadge;
 import com.lzw.badgeview.OnBadgeDragStateChangedListener;
 import com.lzw.badgeview.annotation.ABadgeDragState;
 import com.lzw.badgeview.demo.R;
-import com.lzw.badgeview.demo.databinding.FragmentDashboardBinding;
 
 public class DashboardFragment extends Fragment {
-
-    private FragmentDashboardBinding binding;
 
     private ABadgeImageView ivLike;
     private ABadgeImageView ivComment;
@@ -32,13 +29,12 @@ public class DashboardFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
 
-        binding = FragmentDashboardBinding.inflate(inflater, container, false);
-        View root = binding.getRoot();
+        View root = inflater.inflate(R.layout.fragment_dashboard, container, false);
 
-        ivLike = binding.likeBadge;
-        ivComment = binding.commentBadge;
-        ivFollow = binding.followBadge;
-        ivMe = binding.meBadge;
+        ivLike = root.findViewById(R.id.like_badge);
+        ivComment = root.findViewById(R.id.comment_badge);
+        ivFollow = root.findViewById(R.id.follow_badge);
+        ivMe = root.findViewById(R.id.me_badge);
 
         ivLike.setClickable(true);
         ivComment.setClickable(true);
@@ -71,9 +67,4 @@ public class DashboardFragment extends Fragment {
         return root;
     }
 
-    @Override
-    public void onDestroyView() {
-        super.onDestroyView();
-        binding = null;
-    }
 }

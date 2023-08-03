@@ -14,9 +14,6 @@ import androidx.viewpager.widget.ViewPager;
 import com.google.android.material.badge.BadgeDrawable;
 import com.google.android.material.tabs.TabLayout;
 import com.lzw.badgeview.demo.R;
-import com.lzw.badgeview.demo.tab_page.FragmentOne;
-import com.lzw.badgeview.demo.tab_page.FragmentThree;
-import com.lzw.badgeview.demo.tab_page.FragmentTwo;
 
 import java.util.ArrayList;
 import java.util.List;
