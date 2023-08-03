@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        app:popupTheme="@style/AppThemeToolBar.ToolbarPopupTheme"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:title="Toolbar使用Badge"
+        app:titleTextColor="#ffffff">
+    </androidx.appcompat.widget.Toolbar>
+
+    <Button
+        android:id="@+id/show_badge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="显示badge" />
+
+    <Button
+        android:id="@+id/add_single"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="加 1" />
+
+    <Button
+        android:id="@+id/add_double"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="两位数字" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:src="@mipmap/ic_launcher" />
+
+</LinearLayout>

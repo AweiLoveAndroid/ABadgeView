@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/drawer_menu_item1"
+        android:title="@string/title_home"
+        app:actionLayout="@layout/layout_default_menu_action_item_badge_common"/>
+
+    <item
+        android:id="@+id/drawer_menu_item2"
+        android:title="@string/title_dashboard"
+        app:actionLayout="@layout/layout_default_menu_action_item_badge_common"/>
+
+    <item
+        android:id="@+id/drawer_menu_item3"
+        android:title="@string/title_notifications"
+        app:actionLayout="@layout/layout_default_menu_action_item_badge_common"/>
+
+</menu>

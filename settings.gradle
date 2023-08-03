@@ -1,0 +1,5 @@
+rootProject.name = "ABadgeView"
+include ':annotation'
+include ':compiler'
+include ':lib'
+include ':demo'

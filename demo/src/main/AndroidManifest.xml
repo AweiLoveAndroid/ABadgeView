@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.lzw.badgeview.demo">
+
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <application
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:allowBackup="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".IntoActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".bnv_page.BottomNavActivity"
+            android:theme="@style/AppTheme"/>
+
+        <activity android:name=".tab_page.TabActivity"
+            android:theme="@style/AppThemeNoTitle"/>
+
+        <activity android:name=".toolbar_page.ToolbarBadgeActivity"
+            android:theme="@style/AppThemeToolBar"/>
+
+        <activity android:name=".drawer_page.DrawerActivity"
+            android:theme="@style/AppThemeNoTitle"/>
+
+    </application>
+
+</manifest>

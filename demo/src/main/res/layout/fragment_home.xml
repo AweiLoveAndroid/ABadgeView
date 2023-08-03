@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.lzw.badgeview.demo.bnv_page.HomeFragment">
+
+    <com.lzw.badgeview.ABadgeImageView
+        android:id="@+id/image0"
+        android:layout_width="144px"
+        android:layout_height="144px"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/selector_tab_home" />
+
+    <com.lzw.badgeview.ABadgeImageView
+        android:id="@+id/image1"
+        android:layout_width="144px"
+        android:layout_height="144px"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/selector_tab_home" />
+
+    <com.lzw.badgeview.ABadgeImageView
+        android:id="@+id/image2"
+        android:layout_width="144px"
+        android:layout_height="144px"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/selector_tab_home" />
+
+    <com.lzw.badgeview.ABadgeImageView
+        android:id="@+id/image3"
+        android:layout_width="144px"
+        android:layout_height="144px"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/selector_tab_home" />
+
+    <com.lzw.badgeview.ABadgeShapeableImageView
+        android:id="@+id/image4"
+        android:layout_width="144px"
+        android:layout_height="144px"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:background="@mipmap/avatar"
+        app:shapeAppearance="@style/CircleStyle"/>
+
+</LinearLayout>

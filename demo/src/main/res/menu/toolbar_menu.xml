@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/toolbar_menu_item1"
+        android:title="50"
+        android:icon="@drawable/ic_home_black_24dp"
+        app:actionLayout="@layout/layout_default_menu_action_item_badge_common"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/toolbar_menu_item2"
+        android:title="99+"
+        android:icon="@drawable/ic_dashboard_black_24dp"
+        app:actionLayout="@layout/layout_default_menu_action_item_badge_common"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/toolbar_menu_item3"
+        android:icon="@drawable/ic_notifications_black_24dp"
+        android:title="@string/title_notifications"
+        app:actionLayout="@layout/layout_default_menu_action_item_badge_common"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/toolbar_menu_item4"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="测试"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/toolbar_menu_item5"
+        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:title="@string/title_dashboard"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/toolbar_menu_item6"
+        android:icon="@drawable/ic_notifications_black_24dp"
+        android:title="@string/title_notifications"
+        app:showAsAction="ifRoom"/>
+
+
+</menu>

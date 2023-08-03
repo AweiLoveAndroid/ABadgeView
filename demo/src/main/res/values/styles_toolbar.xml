@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- app theme. -->
+    <style name="AppThemeToolBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+
+        <!-- 设置Menu菜单的字体颜色 -->
+        <item name="android:textColor">@color/colorPrimary</item>
+
+        <!--设置文字大小-->
+        <item name="android:textSize">12sp</item>
+
+        <!--主题设置弹出menu的样式-->
+        <item name="actionOverflowMenuStyle">@style/toolbar_action_menu_overflow</item>
+
+        <!--设置menu分割线-->
+        <item name="android:dropDownListViewStyle">@style/AppDropDownListViewStyle</item>
+
+        <!--一般很少自定义button样式-->
+        <!--        <item name="android:actionButtonStyle">@style/toolbar_action_button_style</item>-->
+
+        <!--        <item name="android:actionOverflowButtonStyle">@style/toolbar_overflow_button_style</item>-->
+
+    </style>
+
+    <style name="AppThemeToolBar.ToolbarPopupTheme">
+        <!-- 设置Menu菜单的背景色，这里是个选择器，按下背景置灰 -->
+        <!--        <item name="android:itemBackground">@drawable/item_pressed_selector</item>-->
+
+        <!-- 设置Menu菜单的字体颜色 -->
+        <!--        <item name="android:textColorPrimary">@color/colorPrimary</item>-->
+        <!--        <item name="android:textColor">@color/colorPrimary</item>-->
+
+        <!-- 设置Menu窗口不覆盖Toolbar视图 -->
+        <item name="overlapAnchor">false</item>
+
+    </style>
+
+    <style name="toolbar_pop_theme">
+        <item name="android:textColor">#aaaaaa</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+
+    <!--自定义toolbar menu菜单的背景、弹出位置-->
+    <style name="toolbar_action_menu_overflow" parent="Widget.AppCompat.Light.PopupMenu.Overflow">
+
+        <!-- 是否覆盖锚点，为true则盖住Toolbar -->
+        <item name="overlapAnchor">false</item>
+
+        <!-- 弹出层水平方向上的偏移，即距离屏幕左边的距离，负值会导致右边出现空隙 -->
+        <item name="android:dropDownHorizontalOffset">-10dp</item>
+
+        <!-- 弹出层垂直方向上的偏移，即在竖直方向上距离Toolbar的距离，值为负则会盖住Toolbar -->
+        <item name="android:dropDownVerticalOffset">4dp</item>
+
+        <!-- 弹出层背景颜色 -->
+        <item name="android:popupBackground">#aaaaaa</item>
+
+        <item name="android:dropDownWidth">wrap_content</item>
+
+        <item name="android:paddingRight">5dp</item>
+
+    </style>
+
+    <style name="AppDropDownListViewStyle" parent="Widget.AppCompat.ListView.DropDown">
+        <item name="android:showDividers">middle</item>
+        <item name="android:divider">@android:color/white</item>
+        <item name="android:dividerHeight">1dp</item>
+    </style>
+
+    <style name="toolbar_action_button_style" parent="@style/Widget.AppCompat.ActionButton">
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:minWidth">0dp</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:paddingStart">5dp</item>
+        <item name="android:paddingEnd">5dp</item>
+    </style>
+    <!--这个一般不会自定义-->
+    <style name="toolbar_overflow_button_style" parent="Widget.AppCompat.Light.ActionButton.Overflow">
+
+    </style>
+
+
+</resources>
