@@ -26,6 +26,9 @@ out/
 build/
 /build
 production/
+*.gradle
+lib/build.gradle
+lib/*.gradle
 
 # Local configuration file (sdk path, etc)
 local.properties
